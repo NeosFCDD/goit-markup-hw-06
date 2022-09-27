@@ -278,50 +278,51 @@
             </form>
         </div>
     </footer>
+    
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close><svg class="close-link" width="18px" height="18px">
                 <use href="./img/sprite.svg#icon-x"></use>
             </svg></button>
-            <form class="main-form">
+            <div class="main-form">
                 <p>Залиште свої дані, ми вам передзвонимо</p>
-                <ul class="form-list list">
-                    <li>
-                        <label class="form-label" name="name">Ім'я
-                            <input class="form-input" type="text" autofocus>
-                            <svg class="modal-link" width="18px" height="18px">
-                                <use href="./img/sprite.svg#person-modal"></use>
-                            </svg>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="form-label" name="phone">Телефон
-                            <input class="form-input" type="tel">
-                            <svg class="modal-link" width="18px" height="18px">
-                                <use href="./img/sprite.svg#phone-modal"></use>
-                            </svg>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="form-label" name="email">Пошта
-                            <input class="form-input" type="email">
-                            <svg class="modal-link" width="18px" height="18px">
+                <form class="form-list">
+                    <label class="form-label" name="name">
+                        <input class="form-input" type="text" autofocus>
+                        <span class="form-name">Ім'я</span>
+                        <span class="modal-icon"><svg width="18px" height="18px">
+                            <use href="./img/sprite.svg#person-modal"></use>
+                        </svg></span>
+                    </label>
+                
+                    <label class="form-label" name="phone">
+                        <input class="form-input" type="tel">
+                        <span class="form-name">Телефон</span>
+                        <span class="modal-icon"><svg width="18px" height="18px">
+                                <use href="./img/sprite.svg#phone-modal"></use></svg>
+                        </span>
+                    </label>
+                
+                    <label class="form-label" name="email">
+                        <input class="form-input" type="email">
+                        <span class="form-name">Пошта</span>
+                        <span class="modal-icon"><svg width="18px" height="18px">
                                 <use href="./img/sprite.svg#email-modal"></use>
                             </svg>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="form-label" name="comment">Коментар
-                            <input class="comment-form" type="text" placeholder="Введіть текст">
-                        </label>
-                    </li>
-                </ul>
+                        </span>
+                    </label>
+            
+                    <label class="form-label" name="comment">
+                        <input class="comment-form" type="text" placeholder="Введіть текст">
+                        <span class="form-name">Коментар</span>
+                    </label>
+                </form>
                 <label class="checkbox">
                     <input type="checkbox" name="agreement" value="agree">
                     Погоджуюся з розсилкою та приймаю <a href="" class="contract-terms">Умови договору</a>
                 </label>
                 <button class="send-btn" type="submit">Відправити</button>
-            </form>
+            </div>
 
         </div>
     </div>

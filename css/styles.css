@@ -711,7 +711,7 @@ body {
 .main-form >p {
     padding-top: 40px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -720,11 +720,25 @@ body {
     flex-direction: column;
 }
 
+.form-label {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 41px;
+    margin-bottom: 28px;
+}
+
+.form-label:last-child {
+    margin-bottom: 0;
+}
+
 .form-input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    margin: 0;
+    padding: 0;
     padding-left: 42px;
 }
 
@@ -736,19 +750,22 @@ body {
     border-radius: 4px;
 }
 
-.form-label {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.form-name {
+    position: absolute;
+    top: -18px;
+    left:0;
     letter-spacing: 0.01em;
     color: var(--add-text-color);
-    margin-bottom: 10px;
 }
 
-.modal-link {
+.modal-icon {
     position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
     left: 15px;
-    top: 28px;
+    top: 50%;
+    transform: translateY(-50%);
     color: currentColor;
 }
 
@@ -761,11 +778,23 @@ body {
     color: var(--blue-text-color);
 }
 
-/* .form-label:focus + .form-input {
-    fill: var(--blue-text-color);
+.form-input:focus {
+    outline: 0;
     border: 1px solid var(--blue-text-color);
-    background-color: #2196F3;
-} */
+}
+
+.form-input:focus ~ .modal-icon {
+    fill: var(--blue-text-color);
+}
+
+.comment-form:focus {
+    outline: 0;
+    border: 1px solid var(--blue-text-color);
+}
+
+.comment-form::placeholder {
+    text-align: start;
+}
 
 .send-btn {
     width: 200px;
