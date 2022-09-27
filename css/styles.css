@@ -728,10 +728,6 @@ body {
     padding-left: 42px;
 }
 
-.form-input:focus {
-    color: var(--blue-text-color);
-    border: var(--blue-text-color);
-}
 
 .comment-form {
     width: 448px;
@@ -753,6 +749,7 @@ body {
     position: absolute;
     left: 15px;
     top: 28px;
+    color: currentColor;
 }
 
 .checkbox {
@@ -763,6 +760,12 @@ body {
 .contract-terms {
     color: var(--blue-text-color);
 }
+
+/* .form-label:focus + .form-input {
+    fill: var(--blue-text-color);
+    border: 1px solid var(--blue-text-color);
+    background-color: #2196F3;
+} */
 
 .send-btn {
     width: 200px;
