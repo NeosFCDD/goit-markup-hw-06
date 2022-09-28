@@ -267,8 +267,8 @@
             </div>
             <form class="subscribe">
                 <p>Підпишіться на розсилку</p>
-                <label class="footer-form" name="subscribe">
-                    <input type="email" placeholder="E-mail">
+                <label class="footer-form">
+                    <input type="email" name="subscribe" placeholder="E-mail">
                     <button type="submit">Підписатися
                         <svg class="send-icon" width="24px" height="24px">
                             <use href="./img/sprite.svg#send"></use>
@@ -287,24 +287,24 @@
             <div class="main-form">
                 <p>Залиште свої дані, ми вам передзвонимо</p>
                 <form class="form-list">
-                    <label class="form-label" name="name">
-                        <input class="form-input" type="text" autofocus>
+                    <label class="form-label">
+                        <input class="form-input" name="name" type="text" autofocus>
                         <span class="form-name">Ім'я</span>
                         <span class="modal-icon"><svg width="18px" height="18px">
                             <use href="./img/sprite.svg#person-modal"></use>
                         </svg></span>
                     </label>
                 
-                    <label class="form-label" name="phone">
-                        <input class="form-input" type="tel">
+                    <label class="form-label">
+                        <input class="form-input" name="phone" type="tel">
                         <span class="form-name">Телефон</span>
                         <span class="modal-icon"><svg width="18px" height="18px">
                                 <use href="./img/sprite.svg#phone-modal"></use></svg>
                         </span>
                     </label>
                 
-                    <label class="form-label" name="email">
-                        <input class="form-input" type="email">
+                    <label class="form-label">
+                        <input class="form-input" name="email" type="email">
                         <span class="form-name">Пошта</span>
                         <span class="modal-icon"><svg width="18px" height="18px">
                                 <use href="./img/sprite.svg#email-modal"></use>
@@ -312,14 +312,16 @@
                         </span>
                     </label>
             
-                    <label class="form-label" name="comment">
+                    <label class="form-label">
                         <textarea class="comment-form" name="comment" rows="5" placeholder="Введіть текст"></textarea>
                         <span class="form-name">Коментар</span>
                     </label>
                 </form>
                 <label class="checkbox-label">
                     <input class="checkbox" type="checkbox" name="agreement" value="agree">
-                    <span class="checkbox-icon"></span>
+                    <span class="checkbox-icon"><svg width="16px" height="15px">
+                        <use href="./img/sprite.svg#check"></use>
+                    </svg></span>
                     Погоджуюся з розсилкою та приймаю   <a href="" class="contract-terms">Умови договору</a>
                 </label>
                 <button class="send-btn" type="submit">Відправити</button>

@@ -703,6 +703,7 @@ body {
 
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    background-color: var(--main-bgd);
     transition: fill 250ms var(--main-timing-func);
 }
 
@@ -793,21 +794,23 @@ body {
 }
 
 .checkbox-icon {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 16px;
     height: 15px;
     border: 2px solid var(--main-text-color);
     border-radius: 2px;
     margin-right: 7px;
-    transition: border-color 250ms var(--main-timing-func) background-color 250ms var(--main-timing-func) background-image 250ms var(--main-timing-func) ;
+    fill: var(--main-bgd);
+    transition: border-color 250ms var(--main-timing-func), background-color 250ms var(--main-timing-func);
 }
 
 .checkbox:checked + .checkbox-icon {
     border-color: transparent;
     background-color: var(--button-active-bgd);
-    background-image: url('../img/icon-check.svg');
-    background-size: contain;
-    background-origin: border-box;
+    /* background-size: contain;
+    background-origin: border-box; */
 }
 
 .contract-terms {
